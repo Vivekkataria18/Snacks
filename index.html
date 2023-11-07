@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportsfit Snacks</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add mobile-responsive CSS here */
+        @media (max-width: 768px) {
+            /* Adjust header buttons for smaller screens */
+            .button-container {
+                flex-direction: column;
+            }
+            
+            .header-button {
+                margin: 10px 0;
+            }
+
+            /* Adjust padding for the hero section */
+            #hero {
+                padding: 20px 0;
+            }
+
+            /* Make category cards stack in a single column */
+            .category-card, .product-card {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <br>
+        <button class="header-button" onclick="window.location.href = 'index.html'">HomePage</button>
+        <button class="header-button" onclick="window.location.href = 'service.html'">Services</button>
+        <button class="header-button" onclick="window.location.href = 'contact.html'">Contact Us</button>
+        <button class="header-button" onclick="window.location.href = 'login.html'">Login</button>
+    </div>
+    
+    <section id="hero" class="fade-in">
+        <h1>Welcome to Sportsfit</h1>
+        <p>Your source for premium sports apparel</p>
+        <a href="#categories" class="cta-button">Shop Now</a>
+        <p class="message">
+            Use Code: NEWMEM to get 25% off on MRP | Free delivery on orders above ₹799
+        </p>
+    </section>
+<section id="categories" class="loop-container">
+    <h2>Explore Our Categories</h2>
+    <div class="category-container">
+        <div class="category-card">
+            <img src="m2.webp" alt="Running Category">
+            <h3>Makhana's</h3>
+            <p>Starting from ₹179</p>
+            <a href="Theplas.html">Shop Now</a>
+        </div>
+        <div class="category-card">
+            <img src="mix.jpg" alt="Gym Category">
+            <h3>Diet Peanuts</h3>
+            <p>Starting from ₹99</p>
+            <a href="#">Shop Now</a>
+        </div>
+        <div class="category-card">
+            <img src="thepla.jpg" alt="Yoga Category">
+            <h3>Diet Thepla</h3>
+            <p>Starting from ₹199</p>
+            <a href="#">Shop Now</a>
+        </div>
+        <div class="category-card">
+            <img src="healthy2.jpg" alt="Dry-Fit Category">
+            <h3>Dry-Fruits</h3>
+            <p>Starting from ₹209</p>
+            <a href="#">Shop Now</a>
+        </div>
+        <div class="category-card">
+            <img src="makhana.jpg" alt="Shoes Category">
+            <h3>Cashews</h3>
+            <p>Starting from ₹199</p>
+            <a href="#">Shop Now</a>
+        </div>
+        <div class="category-card">
+            <img src="healthy2.jpg" alt="Healthy Snacks">
+            <h3>Healthy Snacks</h3>
+            <p>Starting from ₹99</p>
+            <a href="#">Shop Now</a>
+        </div>
+        <div class="category-card">
+            <img src="m2.webp" alt="Running Category">
+            <h3>Diet Makhana</h3>
+            <p>Starting from ₹179</p>
+            <a href="Theplas.html">Shop Now</a>
+        </div>
+        <div class="category-card">
+            <img src="mix.jpg" alt="Gym Category">
+            <h3>Diet Peanuts</h3>
+            <p>Starting from ₹99</p>
+            <a href="#">Shop Now</a>
+        </div>
+        <div class="category-card">
+            <img src="thepla.jpg" alt="Yoga Category">
+            <h3>Diet Thepla</h3>
+            <p>Starting from ₹199</p>
+            <a href="#">Shop Now</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!-- Add more category cards as needed -->
+    </div>
+    <h3><a href="#">View Categories</a></h3>
+</section>
+<section id="bestsellers" class="loop-container">
+    <h2>Best Sellers</h2>
+    <div class="product-card">
+        <img src="m2.webp" alt="Product 1">
+        <h3>Diet Makhana</h3>
+        <p>₹9.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="mix.jpg" alt="Product 2">
+        <h3>Dry-Fit Shorts</h3>
+        <p>₹3.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <br>
+    <br>
+    <h3><a href="#">All Best Sellers</a></h3>
+    
+    <!-- Add more product cards as needed -->
+</section>
+
+<section id="bestsellers" class="loop-container">
+    <h2>New Picks</h2>
+    <div class="product-card">
+        <img src="thepla.jpg" alt="Product 1">
+        <h3>Diet Thepla</h3>
+        <p>$19.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="healthy2.jpg" alt="Product 2">
+        <h3>Dry-Fit Shorts</h3>
+        <p>$31.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="m2.webp" alt="Product 2">
+        <h3>Dry-Fit Shorts</h3>
+        <p>$31.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <br>
+    <br>
+    <h3><a href="#">All New Picks</a></h3>
+    <!-- Add more product cards as needed -->
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam repudiandae quo possimus sunt eos in animi dolor mollitia, quos vel deserunt recusandae porro laudantium ratione architecto eum amet molestias aut!Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos culpa eius maxime expedita quibusdam, deserunt debitis iure corporis quasi dignissimos fugit a mollitia odit fuga id? Minus accusamus totam tenetur. We are dedicated to providing high-quality sports apparel that helps you perform at your best. Our mission is to inspire and enable athletes to achieve their full potential.</p>
+</section>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ex cumque voluptatem. Beatae repellat, magnam, maxime nisi commodi sint, velit perspiciatis necessitatibus vero aspernatur fuga reiciendis ab officia! Architecto, similique.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aperiam harum veritatis blanditiis, exercitationem laborum alias ipsam numquam nulla excepturi! Saepe ea quae quaerat vel voluptatibus quia repellat! Magni, voluptate! If you have any questions or need assistance, feel free to get in touch with our customer support team. We're here to help!</p>
+</section>
+
+<!-- </footer>
+<script src="script.js"></script> -->
+</body>
+</html>

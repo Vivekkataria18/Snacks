@@ -1,0 +1,253 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body { /* Set text color to white */
+    font-family: Arial, sans-serif;
+    background-color: #42487d; /* Set the background color to black */
+    color: #fff;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #e3d0e0;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.header-button {
+    background-color: #A4E7DF;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    padding: 13px 19px;
+    margin: 0 50px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.4s;
+}
+
+.header-button:hover {
+    background-color: #6b72b8;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Hero Section Styles */
+#hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0; /* Increase or decrease the top and bottom padding as needed */
+    margin: 0; /* Remove any margin */
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+#hero p {
+    font-size: 1.2rem;
+}
+
+#hero .cta-button {
+    display: inline-block;
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/* Categories and Product Section Styles */
+#categories, #bestsellers {
+    background-color: #EEBAB2; /* Change background color to a darker shade */
+    padding: 20px;
+    text-align: center;
+}
+
+#categories h2, #bestsellers h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.category-container {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: scrollAnimation 10s linear infinite; /* Add "infinite" to make the animation repeat indefinitely */
+    min-width: max-content; /* Adjust the min-width to match the total width of the cards */
+}
+
+
+
+.category-card, .product-card {
+    background-color: #A4E7DF; /* Change card background color to a darker shade */
+    padding: 20px;
+    /* border: 2px solid #ccc; */
+    text-align: center;
+    /* margin-right: 10px; */
+    margin: 10px;
+    display: inline-block; /* Display cards in a horizontal line */
+    vertical-align: top; /* Align cards at the top */
+    transition: background-color 0.3s; /* Add a smooth transition for the background color */
+}
+
+.category-card:hover, .product-card:hover {
+    background-color: #b8c2ef; /* Change the background color on hover */
+}
+
+.category-card img, .product-card img {
+    width: 200px; /* Set the width */
+    height: 240px; /* Set the height */
+    max-width: 100%; /* Ensure the image doesn't exceed the specified width */
+    max-height: 100%; /* Ensure the image doesn't exceed the specified height */
+}
+
+.category-card h3, .product-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.category-card a, .product-card .add-to-cart {
+    display: inline-block;
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Add a smooth transition for the background color */
+}
+.category-card ,.product-card  {
+    color: #000000;
+}
+
+.category-card a:hover, .product-card .add-to-cart:hover {
+    background-color: #ff4500; /* Change the background color on hover */
+}
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(30%); /* Start off the screen on the right */
+    }
+    100% {
+        transform: translateX(-30%); /* Move to the left to create a loop effect */
+    }
+}
+/* Add this to apply animation effects to category cards */
+.category-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 30%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.category-card:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.05);
+}
+
+/* Add this to apply fade-in animation to the hero section */
+.fade-in {
+    opacity: 0;
+    animation: fade-in 1.5s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Best Sellers Section Styles */
+#bestsellers {
+    background-color: #EEBAB2; /* Change best sellers background color to a darker shade */
+    padding: 20px;
+    text-align: center;
+}
+
+#bestsellers h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.message {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ffffff; /* Text color for emphasis, you can change it to your preference */
+    margin-top: 10px;
+}
+
+
+
+/* About Us Section Styles */
+#about {
+    background-color: #b8c2ef; /* Change about us background color to a darker shade */
+    padding: 20px;
+    text-align: center;
+}
+
+#about h2 {
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.0rem;
+}
+
+/* Contact Us Section Styles */
+#contact {
+    background-color: #b8c2ef; /* Change contact us background color to a darker shade */
+    padding: 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.0rem;
+}
